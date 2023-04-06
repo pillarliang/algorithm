@@ -7,7 +7,6 @@ queue.append('c')
 queue.pop(0)
 print(queue)  # ['b', 'c']
 
-
 # 2.
 from collections import deque
 
@@ -17,7 +16,6 @@ queue.append('b')
 queue.append('c')
 queue.popleft()
 print(queue)  # deque(['b', 'c'])
-
 
 # 3.
 from queue import Queue
