@@ -1,18 +1,9 @@
-# algorithm
-
-## 数据结构
-
-## 算法
-
-### 枚举
-
-#### L204-Count Primes
-
+"""
 原理：要得到自然数n以内的全部素数，必须把不大于的所有素数的倍数剔除，剩下的就是素数。
-
 链接：https://leetcode.com/problems/count-primes/description/
+"""
 
-```python
+
 def countPrimes(n: int) -> int:
     if n < 2:
         return 0
@@ -27,5 +18,6 @@ def countPrimes(n: int) -> int:
                 primes[j] = False
 
     return sum(primes)
-```
 
+
+print(countPrimes(10))
