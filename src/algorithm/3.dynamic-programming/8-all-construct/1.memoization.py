@@ -29,11 +29,7 @@ def all_construct(target, work_bank, memo={}):
     for word in work_bank:
         if target.find(word) == 0:
             suffixWays = all_construct(target[len(word):], work_bank, memo)
-            targetWays = []
-            for way in suffixWays:
-                way.append(word)
-                targetWays.append(way)
-            result += targetWays
+            result += [sub_array + [word] for sub_array in suffixWays]
 
     memo[target] = result
     return result
