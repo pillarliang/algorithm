@@ -70,3 +70,23 @@
 - 局部最优：当前“连续和”为负数的时候立刻放弃，从下一个元素重新计算“连续和”，因为负数加上下一个元素 “连续和”只会越来越小。
 
 - 全局最优：选取最大“连续和”
+
+
+#### L122-Best Time to Buy and Sell Stock II
+
+
+**[Description](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/description/)**
+
+**[Code](../algorithm/src/algorithm/4.greedy/L122.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock%20II.py)**
+
+**[Tutorial](https://www.programmercarl.com/0122.%E4%B9%B0%E5%8D%96%E8%82%A1%E7%A5%A8%E7%9A%84%E6%9C%80%E4%BD%B3%E6%97%B6%E6%9C%BAII.html#%E6%80%9D%E8%B7%AF)**
+
+**Notes:**
+
+- 局部最优：收集每天的正利润，
+
+- 全局最优：求得最大利润。
+
+摆动序列：看的是极值的个数，不求极值的差；
+
+买卖股票：看的是极小值与极大值的差，且极小值需在极大值之前。
