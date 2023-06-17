@@ -54,3 +54,19 @@
 -  Local optimality is similar to the extrema of a function.
 - 💡 To deal with peaks at both ends of the sequence, it is much easier to process **the first point** than **the last**.
 
+
+
+
+#### L53-Maximum Subarray
+
+**[Description](https://leetcode.com/problems/maximum-subarray/)**
+
+**[Code](../algorithm/src/algorithm/4.greedy/L53-MaximumSubarray.py)**
+
+**[Tutorial](https://programmercarl.com/0053.%E6%9C%80%E5%A4%A7%E5%AD%90%E5%BA%8F%E5%92%8C.html)**
+
+**Notes:**
+
+- 局部最优：当前“连续和”为负数的时候立刻放弃，从下一个元素重新计算“连续和”，因为负数加上下一个元素 “连续和”只会越来越小。
+
+- 全局最优：选取最大“连续和”
