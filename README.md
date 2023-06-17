@@ -42,5 +42,15 @@
 
 
 
-#### [L376-Wiggle SubSequence](../algorithm/src/algorithm/4.greedy/L376-wiggleSubsequence.py)
-**Description**: https://leetcode.com/problems/wiggle-subsequence/description/
+#### L376-Wiggle SubSequence
+**[Description](https://leetcode.com/problems/wiggle-subsequence/description/)**
+
+**[Code](../algorithm/src/algorithm/4.greedy/L376-wiggleSubsequence.py)**
+
+**[Tutorial](https://programmercarl.com/0376.%E6%91%86%E5%8A%A8%E5%BA%8F%E5%88%97.html#%E6%80%9D%E8%B7%AF-1-%E8%B4%AA%E5%BF%83%E8%A7%A3%E6%B3%95)**
+
+**Notes:** 
+
+-  Local optimality is similar to the extrema of a function.
+- 💡 To deal with peaks at both ends of the sequence, it is much easier to process **the first point** than **the last**.
+
