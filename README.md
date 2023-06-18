@@ -109,3 +109,25 @@
 - 局部最优：每次移动取最大跳跃步数
 
 - 全局最优：最后得到整体最大覆盖范围，看是否能到终点。
+
+
+
+
+
+#### L45-Jump Game II
+
+**[Description](https://leetcode.com/problems/jump-game-ii/description/)**
+
+**[Code](./src/algorithm/4.greedy/45.jump-game-ii.py)**
+
+**[Tutorial](https://programmercarl.com/0045.%E8%B7%B3%E8%B7%83%E6%B8%B8%E6%88%8FII.html)** 只看文字，不要看代码
+
+**Notes:**
+
+**这里需要统计两个覆盖范围，当前这一步的最大覆盖和下一步最大覆盖**。
+
+如果移动下标达到了当前这一步的最大覆盖最远距离了，还没有到终点的话，那么就必须再走一步来增加覆盖范围，直到覆盖范围覆盖了终点。
+
+- 局部最优：当前可移动距离尽可能多走，如果还没到终点，步数再加一。
+
+- 整体最优：一步尽可能多走，从而达到最小步数。
