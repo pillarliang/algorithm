@@ -131,3 +131,44 @@
 - 局部最优：当前可移动距离尽可能多走，如果还没到终点，步数再加一。
 
 - 整体最优：一步尽可能多走，从而达到最小步数。
+
+
+
+#### L1005-Maximize Sum Of Array After K Negations
+
+**[Description](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/)**
+
+**[Code](./src/algorithm/4.greedy/1005.maximize-sum-of-array-after-k-negations.py)**
+
+**Notes:**
+
+涉及两处贪心：
+
+1.
+
+- 局部最优：让绝对值大的负数变为正数，当前数值达到最大，
+- 整体最优：整个数组和达到最大。
+
+2.
+
+- 局部最优：只找数值最小的正整数进行反转，当前数值和可以达到最大（例如正整数数组{5, 3, 1}，反转1 得到-1 比 反转5得到的-5 大多了），
+- 全局最优：整个 数组和达到最大。
+
+
+
+
+
+#### L-
+
+**[Description](https://leetcode.com/problems/maximize-sum-of-array-after-k-negations/description/)**
+
+**[Code](./src/algorithm/4.greedy/1005.maximize-sum-of-array-after-k-negations.py)**
+
+**[Tutorial](https://programmercarl.com/1005.K%E6%AC%A1%E5%8F%96%E5%8F%8D%E5%90%8E%E6%9C%80%E5%A4%A7%E5%8C%96%E7%9A%84%E6%95%B0%E7%BB%84%E5%92%8C.html)** 只看文字，不要看代码
+
+**Notes:**
+
+- 
+
+
+
