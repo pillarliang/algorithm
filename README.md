@@ -1,6 +1,8 @@
 # algorithm
 
 ## Data Structure
+### [Array](./src/algorithm/array/README.MD)
+
 
 ## Algorithm
 
