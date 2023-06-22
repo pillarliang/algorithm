@@ -2,10 +2,13 @@
 
 #### 1. L27.remove-element
 
-**Description**:[Remove Element](https://leetcode.com/problems/remove-element/description/)
+**[Description**](https://leetcode.com/problems/remove-element/description/)**
 
 **[Code](./27.remove-element.py)**
 
-**Notes:**
 
-Easy -
+
+#### 2. L977.Squares of a Sorted Array
+**[Description**](https://leetcode.com/problems/squares-of-a-sorted-array/description/)**
+
+**[Code](./977.squares-of-a-sorted-array.py)**
