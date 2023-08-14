@@ -2,7 +2,7 @@
 
 ## Data Structure
 ### [Array](./src/algorithm/array/README.MD)
-
+### [Linked-list](./src/algorithm/linked-list/README.md)
 
 ## Algorithm
 
@@ -170,7 +170,7 @@
 
 **Notes:**
 
-- 
+
 
 
 

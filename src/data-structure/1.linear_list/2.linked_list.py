@@ -7,7 +7,6 @@ class Node(object):
 class SinglyLinkedList(object):
     """带头节点的单链表
     元素是从下标为1开始存储"""
-
     def __init__(self) -> None:
         self.head = Node('head')
 
@@ -140,11 +139,13 @@ class SinglyLinkedList(object):
 
     def has_ring(self):
         """检查链表中是否有环并返回环的入口"""
+        # 参考：https://programmercarl.com/0142.%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8II.html#%E6%80%9D%E8%B7%AF
         fast = self.head
         slow = self.head
         while fast and fast.next:
             fast = fast.next.next
             slow = slow.next
+            # 快慢指针相遇，此时从head 和 相遇点，同时查找直至相遇
             if slow == fast:
                 # 判断环入口位置
                 index1 = fast
