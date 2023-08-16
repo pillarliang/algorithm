@@ -4,8 +4,9 @@
 # [242] Valid Anagram
 #
 
+from collections import Counter, defaultdict
 
-# @lc code=start
+
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         # initialize hash table
@@ -26,8 +27,25 @@ class Solution:
         return True
 
 
-s = ""
-t = "car"
-print(Solution().isAnagram(s, t))
+class Solution2:
+    def isAnagram(self, s: str, t: str) -> bool:
+        s_count = Counter(s)
+        t_count = Counter(t)
+        return s_count == t_count
 
-# @lc code=end
+
+class Solution3:
+    def isAnagram(self, s: str, t: str) -> bool:
+        s_dict = defaultdict(int)
+        t_dict = defaultdict(int)
+        for x in s:
+            s_dict[x] += 1
+
+        for x in t:
+            t_dict[x] += 1
+        return s_dict == t_dict
+
+
+s = "abcddce"
+t = "abcddce"
+print(Solution3().isAnagram(s, t))
