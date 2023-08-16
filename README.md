@@ -3,6 +3,7 @@
 ## Data Structure
 ### [Array](./src/algorithm/array/README.MD)
 ### [Linked-list](./src/algorithm/linked-list/README.md)
+### [HashTable](./src/algorithm/hash-table/README.md)
 
 ## Algorithm
 
