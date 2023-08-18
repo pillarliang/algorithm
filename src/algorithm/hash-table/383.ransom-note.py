@@ -3,10 +3,10 @@
 #
 # [383] Ransom Note
 #
+from collections import Counter
 
 
-# @lc code=start
-class Solution:
+class Solution1:
     def canConstruct(self, ransomNote: str, magazine: str) -> bool:
         magazine_dict = dict()
         for i in magazine:
@@ -21,7 +21,17 @@ class Solution:
         return True
 
 
-# @lc code=end
+class Solution2:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        return not Counter(ransomNote) - Counter(magazine)
+
+
+class Solution3:
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        return all((ransomNote.count(s) <= magazine.count(s)
+                    for s in set(ransomNote)))
+
+
 # ransomNote = "a"
 # magazine = "b"
 
@@ -30,4 +40,4 @@ class Solution:
 
 ransomNote = "aa"
 magazine = "aab"
-print(Solution().canConstruct(ransomNote, magazine))
+print(Solution3().canConstruct(ransomNote, magazine))
