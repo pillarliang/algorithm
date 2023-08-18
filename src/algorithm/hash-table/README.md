@@ -34,3 +34,7 @@ for index, item in enumerate(nums):
         return [nums_dict[target - item], index]
     nums_dict[item] = index
 ```
+
+#### 5.4SUM II
+**[Description](https://leetcode.com/problems/4sum-ii/description/)**
+**[Code](./454.4-sum-ii.py)**
