@@ -18,3 +18,8 @@ elif item == ')':
 elif item == '}':
     ...
 ```
+
+#### [1047] Remove All Adjacent Duplicates In String
+**[Description**](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/description/)**
+
+**[Code](./1047.remove-all-adjacent-duplicates-in-string.py)**
