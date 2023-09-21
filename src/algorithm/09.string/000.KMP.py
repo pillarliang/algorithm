@@ -14,7 +14,10 @@ def index_KMP(haystack, needle):
     next = get_next(needle)
     j = 0
     for i in range(len(haystack)):
+        # i: 主串指针
+        # j: 模式串指针
         while j >= 1 and haystack[i] != needle[j]:
+            # 当不匹配时，模式串指针回溯
             j = next[j - 1]
         if haystack[i] == needle[j]:
             # 继续比较后续字符
@@ -85,10 +88,10 @@ def getnext3(needle):
 
 haystack = "aabaafaaca"
 needle = "aafaac"
-print(f'next:{get_next(needle)}')
+# print(f'next:{get_next(needle)}')
 # print(f'next1:{getNext(needle)}')
 # print(f'next:{getnext2(needle)}')
 # print(f'next:{getnext3(needle)}')
 # print(index_KMP(haystack, needle))
 
-# print(index_KMP(haystack, needle))
+print(index_KMP(haystack, needle))
