@@ -19,9 +19,14 @@
 
 **[Code](./151.reverse-words-in-a-string.py)**
 
-#### 3. L28. Find the Index of the First Occurrence in a String
+#### 4. L28. Find the Index of the First Occurrence in a String
 **[Description](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/)**
 
 **[Code](./28.find-the-index-of-the-first-occurrence-in-a-string.py)**
 
 **Note:** Using string API directly. It uses KMP internally.
+
+#### 5. L459. Repeated Substring Pattern
+**[Description](https://leetcode.com/problems/repeated-substring-pattern/description/)**
+
+**[Code](./459.repeated-substring-pattern.py)**
