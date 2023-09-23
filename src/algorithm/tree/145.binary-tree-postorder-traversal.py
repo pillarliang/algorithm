@@ -50,4 +50,3 @@ class Solution2:
                     rec = cur
                     cur = None
         return result
-    

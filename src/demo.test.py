@@ -4,3 +4,10 @@
 # print(result)
 
 # print([1] + [2])
+
+# from collections import deque
+
+# a = deque([])
+# a.append([])
+# while a:
+#     print(a)

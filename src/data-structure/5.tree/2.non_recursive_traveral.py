@@ -2,7 +2,6 @@ from collections import deque
 
 
 class TreeNode(object):
-
     def __init__(self, val, left=None, right=None) -> None:
         self.val = val
         self.left = left
@@ -11,7 +10,6 @@ class TreeNode(object):
 
 class NoRecursiveTraveral(object):
     """非递归遍历"""
-
     def pre_order(self, root):
         """先序遍历"""
         stack = []
