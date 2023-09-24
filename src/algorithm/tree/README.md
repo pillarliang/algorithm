@@ -19,24 +19,37 @@
 **[Code](./145.binary-tree-postorder-traversal.py)**
 
 #### 4. L102. Binary Tree Level Order Traversal
+**Classification:** `level order traversal`
 
 **[Description**](https://leetcode.com/problems/binary-tree-level-order-traversal/)**
 
 **[Code](./102.binary-tree-level-order-traversal.py)**
 
 #### 5. L107. Binary Tree Level Order Traversal II
+**Classification:** `level order traversal`
 
 **[Description**](https://leetcode.com/problems/binary-tree-level-order-traversal-ii/)**
 
 **[Code](./107.binary-tree-level-order-traversal-ii.py)**
 
-#### 6. L
+#### 6. L[199] Binary Tree Right Side View
 
-**[Description**]()**
+**Classification:** `level order traversal`
 
-**[Code]()**
+**[Description**](https://leetcode.com/problems/binary-tree-right-side-view/description/)**
 
-#### 7. L
+**[Code](./199.binary-tree-right-side-view.py)**
+
+#### 7. L[637] Average of Levels in Binary Tree
+
+**Classification:** `level order traversal`
+
+**[Description**](https://leetcode.com/problems/average-of-levels-in-binary-tree/)**
+
+**[Code](./637.average-of-levels-in-binary-tree.py)**
+
+
+#### 8. L
 
 **[Description**]()**
 
