@@ -64,11 +64,11 @@
 **[Code](./226.invert-binary-tree.py)**
 
 
-#### 10. L
+#### 10. L[101] Symmetric Tree
 
-**[Description**]()**
+**[Description**](https://leetcode.com/problems/symmetric-tree/)**
 
-**[Code]()**
+**[Code](./101.symmetric-tree.py)**
 
 
 #### 11. L
