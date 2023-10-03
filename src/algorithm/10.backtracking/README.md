@@ -13,10 +13,14 @@
 **[Code](./51.n-queens.py)**
 
 
-#### L[51] Combinations
-**[Description**]()**
+#### L[37] Combinations
+**[Description**](https://leetcode.com/problems/sudoku-solver/)**
 
-**[Code]()**
+**[Code](./37.sudoku-solver.py)**
+
+**[Note:]**
+1. `in-place` don't need return value.
+2. this problem is very very hard!!!
 
 
 #### L[51] Combinations
