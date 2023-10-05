@@ -23,18 +23,9 @@
 **Description**: https://leetcode.com/problems/add-two-numbers/
 
 
+### [Dynamic Programming](./src/algorithm/3.dynamic-programming/README.md)
 
-### Dynamic Programming
-
-#### L509-Fibonacci Number
-**Description**: https://leetcode.com/problems/fibonacci-number/description/
-
-**Method:**
-
-- [memoization](./src/algorithm/3.dynamic-programming/fibonacci/1.memoization.py)
-
-
-
+### [Greedy](./src/algorithm/4.greedy/README.md)
 
 
 
