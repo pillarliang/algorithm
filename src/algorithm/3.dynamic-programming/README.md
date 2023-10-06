@@ -12,5 +12,5 @@
 ### L62-unique-paths
 **[Description**](https://leetcode.com/problems/unique-paths/description/)**
 **[Code]**
-   * **[Memorization:](./L62-unique-paths/)**
-   * **[Tabulation:]()**
+   * **[Memorization:](./L62-unique-paths/1.memorization.py)**
+   * **[Tabulation:](./L62-unique-paths/2.tabulation.py)**
