@@ -31,10 +31,31 @@
 
 # print(get_grid_at_row_col(1, 4))
 
-a = 1
-b = 2
-c = 3
+# a = 1
+# b = 2
+# c = 3
 
-c = b < c or a
+# c = b < c or a
 
-print(c)
+# print(c)
+
+# a = [1]
+# b = a
+# # a.append(2)
+# # b.append(3)
+# # b = [2]
+
+# print(a)
+# print(b)
+
+# print(id(a))
+# print(id(b))
+
+# b = [2]
+# print(id(a))
+# print(id(b))
+a = [1]
+print(id(a))
+
+a = [2]
+print(id(a))
