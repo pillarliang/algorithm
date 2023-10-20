@@ -11,38 +11,55 @@
 #     return False
 """memoization"""
 
+# def can_construct(target: str, word_bank: list, memo={}):
+#     if target in memo:
+#         return memo[target]
 
-def can_construct(target: str, word_bank: list, memo={}):
-    if target in memo:
+#     if target == '':
+#         return True
+#     for word in word_bank:
+#         if target.find(word) == 0:
+#             if can_construct(target[len(word):], word_bank, memo) is True:
+#                 memo[target] = True
+#                 return True
+
+#     memo[target] = False
+#     return False
+
+
+class Solution():
+    def can_construct(self, target: str, word_bank: list, memo={}):
+        if target in memo:
+            return memo[target]
+
+        if target == '':
+            return True
+
+        for item in word_bank:
+            item_s_index = target.find(item)
+            if item_s_index == 0:
+                memo[target] = self.can_construct(target.replace(item, ''),
+                                                  word_bank, memo)
+                if memo[target]:
+                    return memo[target]
+
+        memo[target] = False
         return memo[target]
 
-    if target == '':
-        return True
-    for word in word_bank:
-        if target.find(word) == 0:
-            if can_construct(target[len(word):], word_bank, memo) is True:
-                memo[target] = True
-                return True
 
-    memo[target] = False
-    return False
-
-
-print(can_construct("abcdef", ["ab", "abc", "cd", "def", "abcd"]))
+print(Solution().can_construct("abcdef", ["ab", "abc", "cd", "def", "abcd"]))
 # true
-print(
-    can_construct("skateboard", ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
+print(Solution().can_construct("skateboard",
+                               ["bo", "rd", "ate", "t", "ska", "sk", "boar"]))
 # False
-print(
-    can_construct("enterapotentpot",
-                  ["a", "p", "ent", "enter", "ot", "o", "t"]))
+print(Solution().can_construct("enterapotentpot",
+                               ["a", "p", "ent", "enter", "ot", "o", "t"]))
 # true
-print(
-    can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
-        "e",
-        "eee",
-        "eeee",
-        "eeeee",
-        "eeeeee",
-    ]))
+print(Solution().can_construct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", [
+    "e",
+    "eee",
+    "eeee",
+    "eeeee",
+    "eeeeee",
+]))
 # false
