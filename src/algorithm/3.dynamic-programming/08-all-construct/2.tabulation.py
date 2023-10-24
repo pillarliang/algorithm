@@ -1,3 +1,16 @@
+# def all_construct(target: str, word_bank: list):
+#     table = [[] for _ in range(len(target) + 1)]
+#     table[0] = [[]]
+
+#     for index, item in enumerate(table):
+#         for word in word_bank:
+#             if target[index:(index + len(word))] == word:
+#                 new_combinations = [sub_array + [word] for sub_array in item]
+#                 table[index + len(word)] += new_combinations
+
+#     return table[len(target)]
+
+
 def all_construct(target: str, word_bank: list):
     table = [[] for _ in range(len(target) + 1)]
     table[0] = [[]]
