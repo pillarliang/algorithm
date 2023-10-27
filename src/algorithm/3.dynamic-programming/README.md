@@ -21,6 +21,14 @@
 **[Code](./70.climbing-stairs.py)**
 
 
-### L-
+### L746 - Min Cost Climbing Stairs
+**[Description**](https://leetcode.com/problems/min-cost-climbing-stairs/submissions/1085042368/)**
+**[Code](./746.min-cost-climbing-stairs.py)**
+
+### L746 - 
+**[Description**]()**
+**[Code]()**
+
+### L746 - 
 **[Description**]()**
 **[Code]()**
