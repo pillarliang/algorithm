@@ -54,8 +54,22 @@
 # b = [2]
 # print(id(a))
 # print(id(b))
-a = [1]
-print(id(a))
+# a = [1]
+# print(id(a))
 
-a = [2]
-print(id(a))
+# a = [2]
+# print(id(a))
+
+
+a = "hello"
+b = 42
+c = {}
+d = [a, b, c]
+
+d[1] = 0
+print(d)
+
+# item = [1]
+# color = ['red', item, 'black']
+# color[1] = 'green'
+# print(color)  # ['red', 'green', 'black']
