@@ -10,3 +10,9 @@
 **[Description**](https://structy.net/problems/connected-components-count)**
 
 **[Code](./04.connected_components_count.py)**
+
+
+### 05-connected components count
+**[Description**](https://structy.net/problems/largest-component)**
+
+**[Code](./05.largest_component.py)**
