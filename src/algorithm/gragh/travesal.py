@@ -26,7 +26,6 @@ def bfs(graph, source):
         for item in graph.get(node):
             if item not in res:
                 queue.append(item)
-        
 
 
 graph = {
