@@ -12,7 +12,12 @@
 **[Code](./04.connected_components_count.py)**
 
 
-### 05-connected components count
+### 05-largest_component
 **[Description**](https://structy.net/problems/largest-component)**
 
 **[Code](./05.largest_component.py)**
+
+### 06-shortest-path
+**[Description**](https://structy.net/problems/shortest-path)**
+
+**[Code](./06_shortest_path.py)**
