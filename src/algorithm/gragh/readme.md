@@ -21,3 +21,8 @@
 **[Description**](https://structy.net/problems/shortest-path)**
 
 **[Code](./06_shortest_path.py)**
+
+### 07-island-count
+**[Description**](https://structy.net/problems/island-count)**
+
+**[Code](./07_island_count.py)**

@@ -61,15 +61,23 @@
 # print(id(a))
 
 
-a = "hello"
-b = 42
-c = {}
-d = [a, b, c]
+# a = "hello"
+# b = 42
+# c = {}
+# d = [a, b, c]
 
-d[1] = 0
-print(d)
+# d[1] = 0
+# print(d)
 
 # item = [1]
 # color = ['red', item, 'black']
 # color[1] = 'green'
 # print(color)  # ['red', 'green', 'black']
+
+a = (1, 2)
+b = (1, 2)
+print(a == b)
+
+c = [1, 2]
+d = [1, 2]
+print(c == d)
