@@ -26,3 +26,10 @@
 **[Description**](https://structy.net/problems/island-count)**
 
 **[Code](./07_island_count.py)**
+
+
+### 08-minimum-island
+**[Description**](https://structy.net/problems/minimum-island)**
+嵌套遍历+深度优先 最优化问题。
+
+**[Code](./08_minimum_island.py)**
