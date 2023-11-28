@@ -10,7 +10,7 @@ from typing import List
 class Solution:
     def solveNQueens(self, n: int) -> List[List[str]]:
         solutions = []
-        state = []
+        state = []  # 存放列索引
         self.search(state, solutions, n)
         return solutions
 
@@ -19,7 +19,7 @@ class Solution:
 
     def get_candidates(self, state, n):
         """find the next position in the state to populate"""
-        candidates = set(range(n))
+        candidates = set(range(n))  # init candidates
         position = len(state)
 
         # prune down candidates that place the queen into attacks

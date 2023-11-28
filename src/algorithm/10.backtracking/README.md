@@ -7,13 +7,13 @@
 **[Code](./77.combinations.py)**
 
 
-#### L[51] Combinations
+#### L[51] n-queens
 **[Description**](https://leetcode.com/problems/n-queens/)**
 
 **[Code](./51.n-queens.py)**
 
 
-#### L[37] Combinations
+#### L[37] sudoku-solver
 **[Description**](https://leetcode.com/problems/sudoku-solver/)**
 
 **[Code](./37.sudoku-solver.py)**

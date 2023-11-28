@@ -1,10 +1,8 @@
-def is_valid_state(state):
-    # check if it is a valid solution
-    return True
-
-
-def get_candidates(state):
-    return []
+def solve():
+    solutions = []
+    state = set()
+    search(state, solutions)
+    return solutions
 
 
 def search(state, solutions):
@@ -18,8 +16,11 @@ def search(state, solutions):
         state.remove(candidate)
 
 
-def solve():
-    solutions = []
-    state = set()
-    search(state, solutions)
-    return solutions
+def is_valid_state(state):
+    # check if it is a valid solution
+    return True
+
+
+def get_candidates(state):
+    # 获取下一个元素的合法state
+    return []
