@@ -25,10 +25,13 @@
 **[Description**](https://leetcode.com/problems/min-cost-climbing-stairs/submissions/1085042368/)**
 **[Code](./746.min-cost-climbing-stairs.py)**
 
-### L746 - 
-**[Description**]()**
-**[Code]()**
+### L1143 - Longest Common Subsequence
+**[Description**](https://leetcode.com/problems/longest-common-subsequence/description/?envType=study-plan-v2&envId=leetcode-75)**
+**[Code](./L1143.%20Longest%20Common%20Subsequence/L1143.Longest%20Common%20Subsequence.py)**
+**[Note]**
+This is a "DP - **Multidimensional**" problem. The storage structure of the problem is a two-dimensional array.
+The storage structure of the problem is a two-dimensional array
 
-### L746 - 
+### L746 - Longest Common Subsequence
 **[Description**]()**
 **[Code]()**
