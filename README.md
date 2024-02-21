@@ -27,6 +27,3 @@
 
 ### [Greedy](./src/algorithm/4.greedy/README.md)
 
-
-
-
