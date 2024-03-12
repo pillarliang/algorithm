@@ -11,7 +11,7 @@ class UndirectedGraph(object):
         self._adjacency[t].append(s)
 
     def bfs(self, start):
-        '''广度优先'''
+        """广度优先"""
         visited = list()
         queue = deque([start])
 
@@ -28,9 +28,9 @@ class UndirectedGraph(object):
         print(visited)
 
     def dfs(self, start, visited):
-        '''深度优先'''
+        """深度优先"""
         visited.append(start)
-        print(start, end=' ')
+        print(start, end=" ")
 
         for neighbor in self._adjacency[start]:
             if neighbor not in visited:
