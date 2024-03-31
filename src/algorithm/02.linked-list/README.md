@@ -27,3 +27,7 @@ Note:
 #### 3. [2095. Delete the Middle Node of a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/description/?envType=study-plan-v2&envId=leetcode-75)
 
 双指针之快慢指针。
+
+#### 4. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/?envType=study-plan-v2&envId=leetcode-75)
+
+链表之分组：每个组一个 `head` + 一个遍历 `pointer`, 最后将后一个 `head` 与前一个 `pointer` 拼接。
