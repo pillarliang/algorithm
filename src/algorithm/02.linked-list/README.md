@@ -31,3 +31,11 @@ Note:
 #### 4. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list/description/?envType=study-plan-v2&envId=leetcode-75)
 
 链表之分组：每个组一个 `head` + 一个遍历 `pointer`, 最后将后一个 `head` 与前一个 `pointer` 拼接。
+
+#### 5. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/description/?envType=study-plan-v2&envId=leetcode-75)
+
+#### 6. [2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/?envType=study-plan-v2&envId=leetcode-75)
+综合了：
+    1. 用快慢指针找到链表的中点；
+    2. 把后半部分链表反转；
+    3. 同步的遍历前后两部分。
