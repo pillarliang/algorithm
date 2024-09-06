@@ -1,4 +1,10 @@
 class Solution:
+    aaa = "dda"
+
+    def __init__(self, a) -> None:
+        self.b = "ada"
+        self.a = a
+
     def longestCommonSubsequence(self, text1: str, text2: str) -> int:
         # return self.solve_recursion(text1, text2, 0, 0)
         n = len(text1)

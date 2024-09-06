@@ -8,6 +8,7 @@
 # @lc code=start
 # Definition for singly-linked list.
 from typing import Optional
+global a
 
 
 class ListNode:

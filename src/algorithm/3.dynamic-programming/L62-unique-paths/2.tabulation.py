@@ -19,16 +19,17 @@
 # print(uniquePaths(18, 18))  # 2333606220
 
 
-class Solution_tabulation:
-    """tabulation"""
+class Solution:
     def uniquePaths(self, m: int, n: int) -> int:
-        table = [[0] * (n + 1) for _ in range(m + 1)]
-        table[1][1] = 1
+        table = [[0] * n for _ in range(m)]
 
-        for idx_row in range(m + 1):
-            for idx_col in range(n + 1):
-                if idx_row + 1 <= m:
-                    table[idx_row + 1][idx_col] += table[idx_row][idx_col]
-                if idx_col + 1 <= n:
-                    table[idx_row][idx_col + 1] += table[idx_row][idx_col]
-        return table[m][n]
+        for c in range(n):
+            table[0][c] = 1
+        for r in range(m):
+            table[r][0] = 1
+
+        for r in range(1, m):
+            for c in range(1, n):
+                table[r][c] = table[r - 1][c] + table[r][c - 1]  # 定义状态转移方程
+
+        return table[m - 1][n - 1]
