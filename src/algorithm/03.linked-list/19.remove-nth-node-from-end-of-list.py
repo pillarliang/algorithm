@@ -8,7 +8,6 @@
 # @lc code=start
 # Definition for singly-linked list.
 from typing import Optional
-global a
 
 
 class ListNode:
@@ -26,10 +25,6 @@ class Solution:
         # initialize
         for _ in range(n + 1):
             fast = fast.next
-
-        while n:
-            fast = fast.next
-            n -= 1
 
         while fast:
             fast = fast.next
