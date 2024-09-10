@@ -13,6 +13,7 @@ def search(state, solutions):
     for candidate in get_candidates(state):
         state.add(candidate)
         search(state, solutions)
+        # 回朔
         state.remove(candidate)
 
 
@@ -25,3 +26,10 @@ def get_candidates(state):
     """生成当前状态下所有可能的候选项。"""
     # 获取下一个元素的合法state
     return []
+
+
+"""
+state 代表当前的状态。
+
+candidates 代表当前状态下可能的下一个字符位置，不一定是满足条件的。
+"""

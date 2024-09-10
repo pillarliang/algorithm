@@ -17,7 +17,8 @@ class TreeNode:
 
 
 class Solution:
-    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+
+    def isSymmetric_old(self, root: Optional[TreeNode]) -> bool:
         if not root:
             return True
 
@@ -41,6 +42,26 @@ class Solution:
                 return False
 
         return True
+
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
+
+        def isMirror(left: Optional[TreeNode], right: Optional[TreeNode]) -> bool:
+            # 如果两个节点同时为 None，返回 True；如果只有一个为 None，返回 False
+            if not left and not right:
+                return True
+            if not left or not right:
+                return False
+
+            # 检查当前节点值并递归检查子树
+            return (
+                (left.val == right.val)
+                and isMirror(left.left, right.right)
+                and isMirror(left.right, right.left)
+            )
+
+        return isMirror(root.left, root.right)
 
 
 # @lc code=end

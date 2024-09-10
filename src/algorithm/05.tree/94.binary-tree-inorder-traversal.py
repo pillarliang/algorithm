@@ -17,11 +17,19 @@ class TreeNode:
 
 class Solution1:
     """using recursive traversal"""
-    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+    def inorderTraversal_old(self, root: Optional[TreeNode]) -> List[int]:
         if root is None:
             return []
         return self.inorderTraversal(
             root.left) + [root.val] + self.inorderTraversal(root.right)
+
+    def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
+        if not root:
+            return []
+
+        left_v = self.inorderTraversal(root.left)
+        right_v = self.inorderTraversal(root.right)
+        return left_v + [root.val] + right_v
 
 
 # @lc code=end

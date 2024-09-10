@@ -17,7 +17,8 @@ class TreeNode:
 
 
 class Solution:
-    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+
+    def invertTree_v1(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
             return root
 
@@ -31,6 +32,15 @@ class Solution:
                     queue.append(cur.left)
                 if cur.right:
                     queue.append(cur.right)
+
+        return root
+
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return None
+        left = self.invertTree(root.left)
+        right = self.invertTree(root.right)
+        root.left, root.right = right, left
 
         return root
 
