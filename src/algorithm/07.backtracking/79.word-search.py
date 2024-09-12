@@ -9,9 +9,10 @@ class Solution:
             for c in range(len(board[0])):
                 if board[r][c] == word[0]:
                     initial_state = {
-                        "path": set(),
+                        "path": set(),  # 确保每个单元格只访问一次，避免循环和重复计算。
+                        # 跟踪当前搜索的位置，以便在递归调用中进行正确的移动。
                         "current_position": (r, c),
-                        "word_index": 0,
+                        "word_index": 0,  # 记录当前匹配到的单词字符索引，以便检查是否已经找到完整的单词。
                     }
                     self.search(board, word, initial_state, solutions)
                     if solutions[0]:
@@ -23,31 +24,32 @@ class Solution:
             solutions[0] = True
             return
 
-        for candidate in self.get_candidates(board, word, state):
-            r, c, word_index = candidate
-            state["path"].add((r, c))
-            state["current_position"] = (r, c)
-            state["word_index"] = word_index
-
-            self.search(board, word, state, solutions)
-
-            state["path"].remove((r, c))
-            state["current_position"] = (r, c)
-            state["word_index"] = word_index - 1
-
-    def is_valid_state(self, word, state):
-        return state["word_index"] == len(word)
-
-    def get_candidates(self, board, word, state):
-        candidates = []
         r, c = state["current_position"]
         word_index = state["word_index"]
 
         if board[r][c] != word[word_index]:
-            return candidates
+            return
+
+        for candidate in self.get_candidates(board, word, state):
+            new_r, new_c = candidate
+            state["path"].add((new_r, new_c))
+            state["current_position"] = (new_r, new_c)
+            state["word_index"] = word_index + 1
+
+            self.search(board, word, state, solutions)
+
+            state["path"].remove((new_r, new_c))
+            state["current_position"] = (r, c)
+            state["word_index"] = word_index
+
+    def is_valid_state(self, word, state):
+        return state["word_index"] == len(word) - 1
+
+    def get_candidates(self, board, word, state):
+        candidates = []
+        r, c = state["current_position"]
 
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
-        next_index = word_index + 1
 
         for dr, dc in directions:
             new_r, new_c = r + dr, c + dc
@@ -56,12 +58,19 @@ class Solution:
                 and 0 <= new_c < len(board[0])
                 and (new_r, new_c) not in state["path"]
             ):
-                candidates.append((new_r, new_c, next_index))
+                candidates.append((new_r, new_c))
 
         return candidates
 
 
 # 示例用法
-board = [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]]
-word = "ABCCED"
-print(Solution().exist(board, word))  # 输出: True
+# board = [["a"]]
+# word = "a"  # 输出: True
+
+# board = [["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]]
+# word = "ABCCED"  # True
+
+board = ([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]],)
+word = "ABCB"  # False
+
+print(Solution().exist(board, word))
