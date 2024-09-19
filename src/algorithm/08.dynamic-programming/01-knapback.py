@@ -7,11 +7,14 @@
 def knapsack(n, w, weight, value):
     # 初始化 dp 数组
     table = [[0] * (w + 1) for _ in range(n + 1)]
+    # table[i][j] 表示使用前 i 个物品，并且背包的总重量不超过 j 时的最大价值。
 
     # 填充 dp 数组
     for i in range(1, n + 1):
         for j in range(1, w + 1):
             if j >= weight[i]:
+                # table[i - 1][j]: 不放当前物品的最大价值。
+                # table[i - 1][j - weight[i]] + value[i]: 放当前物品后的最大价值。
                 table[i][j] = max(
                     table[i - 1][j], table[i - 1][j - weight[i]] + value[i]
                 )
@@ -20,6 +23,20 @@ def knapsack(n, w, weight, value):
 
     # 提取结果
     return table[n][w]
+
+
+def knapsack_v2(n, w, weight, value):
+    # 初始化 dp 数组
+    table = [0] * (w + 1)
+    # table[j] 表示背包的总重量不超过 j 时的最大价值。
+
+    # 填充 dp 数组
+    for i in range(1, n + 1):
+        for j in range(w, weight[i] - 1, -1):
+            table[j] = max(table[j], table[j - weight[i]] + value[i])
+
+    # 提取结果
+    return table[w]
 
 
 # 示例调用

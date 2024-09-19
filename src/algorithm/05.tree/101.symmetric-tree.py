@@ -2,7 +2,12 @@
 # @lc app=leetcode id=101 lang=python3
 #
 # [101] Symmetric Tree
-#
+"""
+一棵二叉树是镜像对称的，当且仅当它的左子树是右子树的镜像映像。检查两个树（或子树）是否互为镜像需要满足以下条件：
+两个树的根节点的值相等。
+一个树的左子树与另一个树的右子树互为镜像。
+一个树的右子树与另一个树的左子树互为镜像。
+"""
 from typing import Optional
 from collections import deque
 
@@ -43,7 +48,7 @@ class Solution:
 
         return True
 
-    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+    def isSymmetric_v2(self, root: Optional[TreeNode]) -> bool:
         if not root:
             return True
 
@@ -62,6 +67,23 @@ class Solution:
             )
 
         return isMirror(root.left, root.right)
+
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool:
+        if not root:
+            return True
+
+        return self.helper(root.left, root.right)
+
+    def helper(self, left, right):
+        if not left and not right:
+            return True
+        if not left or not right:
+            return False
+        return (
+            (left.val == right.val)
+            and self.helper(left.left, right.right)
+            and self.helper(left.right, right.left)
+        )
 
 
 # @lc code=end
