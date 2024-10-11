@@ -12,17 +12,18 @@ from typing import List
 因此我们可以更新 dp[i]：dp[i] = max(dp[i], dp[j] + 1)  # 当 nums[i] > nums[j] 时更新 dp[i]
 """
 
+
 # @lc code=start
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         table = [1] * len(nums)
-        
+
         for i in range(len(nums)):
             for j in range(i):
                 if nums[j] < nums[i]:
                     table[i] = max(table[i], table[j] + 1)
-                    
-        return max(table)
-    
-# @lc code=end
 
+        return max(table)
+
+
+# @lc code=end
